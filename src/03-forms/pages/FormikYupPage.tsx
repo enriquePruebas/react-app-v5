@@ -24,9 +24,6 @@ export const FormikYupPage = () => {
                 .email("Debe de ser un email")
                 .required()
         })
-        // onSubmit(values){
-        //     console.log()
-        // }
     });
 
     return (
@@ -37,10 +34,6 @@ export const FormikYupPage = () => {
                 <label htmlFor='firstName'>First Name</label>
                 <input
                     type="text" {...getFieldProps('firstName')}
-
-                // onChange={handleChange}
-                // onBlur={handleBlur}
-                // value={firstName}
                 />
                 {touched.firstName && errors.firstName && <span>{errors.firstName}</span>}
 
